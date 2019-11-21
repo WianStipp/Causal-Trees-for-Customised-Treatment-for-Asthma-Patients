@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, fontsize=32] ;
+edge [fontsize=24] ;
+0 [label="samples = 124\neffect = -0.183\np = 0.003\nphysical comorbidity >= 49.603\n", style=filled, fillcolor="/blues9/2", color=red, penwidth=3.0] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+1 [label="samples = 52\neffect = -0.261\np = 0.159", style=filled, fillcolor="/blues9/1"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+2 [label="samples = 72\neffect = -0.127\np = 0.202\nmental comorbidity >= 58.543\n", style=filled, fillcolor="/blues9/4"] ;
+2 -> 3 ;
+3 [label="samples = 9\neffect = 0.125\np = 0.670", style=filled, fillcolor="/blues9/9", fontcolor=white] ;
+2 -> 4 ;
+4 [label="samples = 63\neffect = -0.138\np = 0.230\nmental comorbidity >= 49.652\n", style=filled, fillcolor="/blues9/3"] ;
+4 -> 5 ;
+5 [label="samples = 30\neffect = -0.208\np = 0.215", style=filled, fillcolor="/blues9/2"] ;
+4 -> 6 ;
+6 [label="samples = 32\neffect = -0.165\np = 0.301", style=filled, fillcolor="/blues9/3"] ;
+}
